@@ -1,3 +1,5 @@
+print("Hello World")
+
 # The Quick Brown Fox
 '''
 Write a Python function that accepts a string and counts the number of upper and lower case letters.
@@ -7,6 +9,11 @@ No. of Upper case characters : 3
 No. of Lower case Characters : 13
 Your code should be simple, extremely readable, and well commented. Test thoroughly through every step. Be sure to use type hinting and proper documentation
 '''
+    
+    
+
+
+
 
 # Highest of our two numbers
 ''' Write a function called get_highest that takes 2 numbers as parameters and returns the highest of the 2 numbers. 
