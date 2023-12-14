@@ -100,17 +100,22 @@ def locate_chevy(car):
         return True
     else:
         return False
-print(locate_chevy(car))
+# print(locate_chevy(car))
         
     
-
-
 locate_chevy(car)
 
+# lambda arguments : expression
+chevy = lambda car : True if car["Car"] == "Chevy" else False
 
+# print(chevy(car))
 
+add_two_lambda = lambda x,y : x + y
+# print(add_two_lambda(2,3))
+# print((add_two_lambda)(2,3))
 
-
+chevy_filter = filter(lambda car : True if car["Car"] != "Chevy" else False, cars)
+print(list(chevy_filter))
 
 
 
