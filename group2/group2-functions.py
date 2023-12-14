@@ -10,27 +10,27 @@ No. of Lower case Characters : 13
 Your code should be simple, extremely readable, and well commented. Test thoroughly through every step. Be sure to use type hinting and proper documentation
 '''
     
-def brown_fox(word: str) -> str:
-    '''We are looping through the string 
-    to count upper and lower case characters'''
-    upper_count = 0
-    lower_count = 0
+# def brown_fox(word: str) -> str:
+#     '''We are looping through the string 
+#     to count upper and lower case characters'''
+#     upper_count = 0
+#     lower_count = 0
     
-    result = word.replace(" ","")
-    # we are going to loop through each character in a string 
-    for i in word:
-        if i.islower():
-            lower_count += 1
-        elif i.isupper():
-            upper_count += 1
+#     result = word.replace(" ","")
+#     # we are going to loop through each character in a string 
+#     for i in word:
+#         if i.islower():
+#             lower_count += 1
+#         elif i.isupper():
+#             upper_count += 1
             
-    print(f"No. of Upper case characters : {upper_count}\nNo. of Lower case Characters : {lower_count} ")
+#     print(f"No. of Upper case characters : {upper_count}\nNo. of Lower case Characters : {lower_count} ")
 	
 
     
 
 
-brown_fox("Coding Is Fun Until Its Challenging")
+# brown_fox("Coding Is Fun Until Its Challenging")
     
 
 
@@ -40,6 +40,22 @@ brown_fox("Coding Is Fun Until Its Challenging")
 ''' Write a function called get_highest that takes 2 numbers as parameters and returns the highest of the 2 numbers. 
 Your code should be simple, extremely readable, and well commented. Test thoroughly through every step. Be sure to use type hinting and proper documentation
 '''
+
+def get_highest(x: int, y: int) -> int:
+    """ The function will return 
+    the highest of two numbers"""
+    if x > y:
+        return x
+    else:
+        return y
+print(get_highest(20, 10))
+    
+    
+    
+    
+
+
+
 
 
 # New job at Chevy
