@@ -10,7 +10,7 @@ No. of Lower case Characters : 13
 Your code should be simple, extremely readable, and well commented. Test thoroughly through every step. Be sure to use type hinting and proper documentation
 '''
     
-def brown_fox(word):
+def brown_fox(word: str) -> str:
     '''We are looping through the string 
     to count upper and lower case characters'''
     upper_count = 0
@@ -21,17 +21,16 @@ def brown_fox(word):
     for i in word:
         if i.islower():
             lower_count += 1
-		elif:
+        elif i.isupper():
             upper_count += 1
-		else:
-            pass
+            
+    print(f"No. of Upper case characters : {upper_count}\nNo. of Lower case Characters : {lower_count} ")
+	
+
+    
 
 
-
-    print(result, upper_count, lower_count)
-
-
-print(brown_fox('The quick Brown Fox'))
+brown_fox("Coding Is Fun Until Its Challenging")
     
 
 
