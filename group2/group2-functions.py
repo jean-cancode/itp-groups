@@ -41,14 +41,14 @@ Your code should be simple, extremely readable, and well commented. Test thoroug
 Your code should be simple, extremely readable, and well commented. Test thoroughly through every step. Be sure to use type hinting and proper documentation
 '''
 
-def get_highest(x: int, y: int) -> int:
-    """ The function will return 
-    the highest of two numbers"""
-    if x > y:
-        return x
-    else:
-        return y
-print(get_highest(20, 10))
+# def get_highest(x: int, y: int) -> int:
+#     """ The function will return 
+#     the highest of two numbers"""
+#     if x > y:
+#         return x
+#     else:
+#         return y
+# print(get_highest(20, 10))
     
     
     
@@ -81,6 +81,7 @@ Your code should be simple, extremely readable, and well commented. Test thoroug
 '''
 
 # Using Filter function lets grab everyone in this list who owns a chevy
+
 cars = [{ "Driver": "Mike", "Car": "Honda"},
         { "Driver": "Anthony", "Car": "Ford"},
         { "Driver": "Reynelle", "Car": "Subaru"},
@@ -90,7 +91,31 @@ cars = [{ "Driver": "Mike", "Car": "Honda"},
         { "Driver": "Judith", "Car": "Chevy"}]
 
 
+
 # First create a function that delivers true or false depending on if the user owns a chevy
+
+car = { "Driver": "Mike", "Car": "Chevy"}
+def locate_chevy(car):
+    if car["Car"] == "Chevy":
+        return True
+    else:
+        return False
+print(locate_chevy(car))
+        
+    
+
+
+locate_chevy(car)
+
+
+
+
+
+
+
+
+
+
 
 # Next test that your function works on 1 dictionary in the list of cars
 
