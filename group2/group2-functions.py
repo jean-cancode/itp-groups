@@ -1,4 +1,4 @@
-print("Hello World")
+# print("Hello World")
 
 # The Quick Brown Fox
 '''
@@ -10,6 +10,28 @@ No. of Lower case Characters : 13
 Your code should be simple, extremely readable, and well commented. Test thoroughly through every step. Be sure to use type hinting and proper documentation
 '''
     
+def brown_fox(word):
+    '''We are looping through the string 
+    to count upper and lower case characters'''
+    upper_count = 0
+    lower_count = 0
+    
+    result = word.replace(" ","")
+    # we are going to loop through each character in a string 
+    for i in word:
+        if i.islower():
+            lower_count += 1
+		elif:
+            upper_count += 1
+		else:
+            pass
+
+
+
+    print(result, upper_count, lower_count)
+
+
+print(brown_fox('The quick Brown Fox'))
     
 
 
