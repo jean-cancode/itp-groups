@@ -7,11 +7,34 @@ Expected Result : black-green-red-white-yellow
 Your code should be simple, extremely readable, and well commented. Test thoroughly through every step. Be sure to use type hinting and proper documentation
 '''
 
+def alphabetical(input_str: str)-> str: # Defining a function
+
+	word =  input_str.split('-') # splitting the input_string at each " - "
+
+	sort_word = sorted(word) # Sorting each word alphabetically
+
+	finish_str = "-".join(sort_word) # Joining each word back together with a " - "
+	return finish_str # Returning your finished string
+
+input_str = "green-red-yellow-black-white" # Entering your sample string 
+
+# print(alphabetical(input_str)) # 
+
+
 # How many miles?
 '''
 Write a function called km_to_miles that takes kilometers as a parameter, converts it into miles and returns the result.
 Your code should be simple, extremely readable, and well commented. Test thoroughly through every step. Be sure to use type hinting and proper documentation
-'''
+	'''
+# userkilometers = float(input("Enter value in kilometers: "))
+def km_to_miles(userkilometers):
+	
+	mile_test = userkilometers / 1.609
+	return mile_test
+
+# print(km_to_miles(userkilometers))
+
+
 
 
 # New job at Chevy
@@ -44,17 +67,38 @@ cars = [{ "Driver": "Mike", "Car": "Honda"},
         { "Driver": "Julie", "Car": "Chevy"},
         { "Driver": "Sam", "Car": "Chevy"},
         { "Driver": "Judith", "Car": "Chevy"}]
+#[i for i in records if (i['title'] == 'developer')]
+# for key, value in dictionary.items():
+#     print(key, value)
 
-
+#sorted(iterable, key=key==lambda, #optional reverse=True/False)
 # First create a function that delivers true or false depending on if the user owns a chevy
-
+# name = input("Which driver would you like ot check? ")
+# def chevy_owner(name): # Taking in the name
+# 	global cars # pulling in the dictionary for the cars
+# 	for Driver in cars: # Check for the driver we are looking for
+# 		if Driver['Driver'] == name: # if the driver is = to the driver we are looking for continue
+# 			if Driver["Car"] == "Chevy": # if they drivers car is chevy return false
+# 				return False
+				
+# 			else:
+# 				return True # if the driver doesn't own a chevy send them the mail
+# print(chevy_owner(name))
+def chevy_owner2(owner):
+	if owner["Car"] == "Chevy":
+		return False
+	else:
+		return True
 # Next test that your function works on 1 dictionary in the list of cars
 
 # Create and test lambda from function
 
 # Use the filter function to deliver dictionaries with chevy owners
-
+# print(list(filter(chevy_owner2, cars)))
 # Loop through and deliver the name of the drivers in whatever format you prefer
+result = list(filter(chevy_owner2, cars))
+for owner in result:
+	print(owner['Driver'])
 
 
 # Group 1 / Group 2
